@@ -37,16 +37,29 @@ play_again = False
 print("\n num1 is of type: " + str(type(num1)))
 print("\n user_name is of type: " + str(type(user_name)))
 # TODO: Output the types of the variables: result_of_division and play_again.
+print("result_of_division is of type:", str(type(result_of_division)))
+print("play_again is of type:", str(type(play_again)))
 
 # Get three integers from the user.
 num1 = input("\n Please enter the first whole (integer) number: ")
 print("\n num1 = " + num1)
 # TODO: get two more ints from the user
+num2 = input(" Please enter a second whole (integer) number: ")
+print(" num2 = " + num2)
+
+num3 = input(" Please enter a third whole (integer) number: ")
+print(" num3 = " + num3)
 # TODO: examine the type of num1, num2, and num3. why/how did the data type change from int to str?
+# It was inputted from the user
 # TODO: Get the data types of num1, num2, and num3 back to int so you can compare values.
+int(num1)
+int(num2)
+int(num3)
 
 # Get the user's name.
 # TODO: get and print() the user's name
+user_name = input("Hello, please enter your name: ")
+print("Welcome, " + user_name + "!")
 
 a_num1 = 11
 a_num2 = 44
@@ -68,6 +81,19 @@ print("\n\n Largest of three is: " + str(largest_num))
 
 # TODO: Code up a nested-if statement solution after making num1, num2, and num3 proper data types to work
 # with arithmetic operators
+if num1 > num2:
+    if num1 > num3:
+        largest_of_three = num1
+    else:
+        largest_of_three = num3
+else:
+    if num2 > num3:
+        largest_of_three = num2
+    else:
+        largest_of_three = num3
+
+print("The largest of three is: " +str(largest_of_three))
+
 
 # TODO: Code up a solution using compound if statements (use the 'and' operator)
 # Example compound if statement:
@@ -80,5 +106,16 @@ if (n1 < n2) and (n1 < n3):
 else:
     print("\n\n" + str(n1) + " is not smallest.")
 
-# TODO: Code up a solution from ChatGPT
+if num1 > num2 and num1 > num3:
+    print(str(num1) + " is the largest of three")
+if num2 > num1 and num2 > num3:
+    print(str(num2) + " is the largest of three")
+if num3 > num1 and num3 > num2:
+    print(str(num3) + " is the largest of three")
 
+
+
+
+
+# TODO: Code up a solution from ChatGPT
+#Not sure what this is asking or how I would even ask ChatGPT
