@@ -118,4 +118,40 @@ if num3 > num1 and num3 > num2:
 
 
 # TODO: Code up a solution from ChatGPT
-#Not sure what this is asking or how I would even ask ChatGPT
+# The following is the response I got from ChatGPT:
+
+# Get user name
+user_name = input("Please enter your name: ")
+
+# Get three input numbers
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+num3 = int(input("Enter the third number: "))
+
+# Find the largest of three numbers
+largest = num1
+if num2 > largest:
+    largest = num2
+if num3 > largest:
+    largest = num3
+
+# Calculate the quotient of the first number by the second number
+quotient = num1 / num2
+
+# Display user name
+print("Hello,", user_name)
+
+# Display the quotient
+print("Quotient of", num1, "divided by", num2, "is:", quotient)
+
+# Display the largest number
+print("The largest of the three numbers is:", largest)
+
+# Print the types of variables
+print("Variable types:")
+print("user_name is of type:", type(user_name))
+print("num1 is of type:", type(num1))
+print("num2 is of type:", type(num2))
+print("num3 is of type:", type(num3))
+print("largest is of type:", type(largest))
+print("quotient is of type:", type(quotient))
